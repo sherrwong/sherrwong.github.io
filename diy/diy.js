@@ -1,5 +1,5 @@
 var img;
-var initials ='jm'; // your initials
+var initials ='sw'; // your initials
 var choice = '1'; // starting choice, so it is not empty
 var screenbg = 250; // off white background
 var lastscreenshot=61; // last screenshot never taken
@@ -79,14 +79,6 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
   }
  }
  
-function testbox(r, g, b) {
-// this is a test function that will show you how you can put your own functions into the sketch
-  x = mouseX;
-  y = mouseY;
-  fill(r, g, b);
-  rect(x-50, y-50, 100, 100);
-
-}
 
 function clear_print() {
 // this will do one of two things, x clears the screen by resetting the background
