@@ -59,7 +59,7 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     line(mouseX, mouseY, pmouseX, pmouseY);
   
   }else if (toolChoice == 'a' || toolChoice == 'A') { // g places the image we pre-loaded
-    image(img, mouseX-60, mouseY-60);
+    image(img, mouseX-30, mouseY-30);
     
   }else if (toolChoice == 's' || toolChoice == 'S') { // g places the image we pre-loaded
     image(img, mouseX-60, mouseY-60);
