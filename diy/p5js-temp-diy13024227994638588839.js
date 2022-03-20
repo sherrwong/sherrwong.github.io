@@ -14,7 +14,6 @@ function preload() {
   img4 = loadImage('apple.png');
   img5 = loadImage('apple.png');
   img6 = loadImage('apple.png');
-  img7 = loadImage('apple.png');
 }
 
 function setup() {
@@ -44,7 +43,7 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     line(mouseX, mouseY, pmouseX, pmouseY);
     
   } else if (toolChoice == '2') { // big pen
-    strokeWeight(6);
+    strokeWeight(7);
     stroke(01);
     line(mouseX, mouseY, pmouseX, pmouseY);
     
@@ -54,33 +53,28 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     line(mouseX, mouseY, pmouseX, pmouseY);
     
   } else if (toolChoice == '4') { // big eraser
-
+    strokeWeight(7);
     stroke(255, 255, 255);
     line(mouseX, mouseY, pmouseX, pmouseY);
   
   }else if (toolChoice == 'a' || toolChoice == 'A') { // g places the image we pre-loaded
-    image(img, mouseX-30, mouseY-30);
+    image(img, mouseX-15, mouseY-15);
     
   }else if (toolChoice == 's' || toolChoice == 'S') { // g places the image we pre-loaded
-    image(img, mouseX-60, mouseY-60);
+    image(img2, mouseX-60, mouseY-60);
     
   }else if (toolChoice == 'd' || toolChoice == 'D') { // g places the image we pre-loaded
-    image(img, mouseX-60, mouseY-60);
+    image(img3, mouseX-60, mouseY-60);
     
   }else if (toolChoice == 'f' || toolChoice == 'F') { // g places the image we pre-loaded
-    image(img, mouseX-60, mouseY-60);
+    image(img4, mouseX-60, mouseY-60);
     
   }else if (toolChoice == 'g' || toolChoice == 'G') { // g places the image we pre-loaded
-    image(img, mouseX-60, mouseY-60);
-    
-  }else if (toolChoice == 'a' || toolChoice == 'A') { // g places the image we pre-loaded
-    image(img, mouseX-60, mouseY-60);
+    image(img5, mouseX-60, mouseY-60);
     
   }else if (toolChoice == 'h' || toolChoice == 'H') { // g places the image we pre-loaded
-    image(img, mouseX-60, mouseY-60);
+    image(img6, mouseX-60, mouseY-60);
     
-  }else if (toolChoice == 'j' || toolChoice == 'J') { // g places the image we pre-loaded
-    image(img, mouseX-60, mouseY-60);
     
   }
  }
