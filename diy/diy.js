@@ -8,12 +8,17 @@ function preload() {
 // preload() runs once, it may make you wait
 //  img = loadImage('cat.jpg');  // cat.jpg needs to be next to this .js file
 // you can link to an image on your github account
-  img = loadImage('https://dma-git.github.io/images/74.png');
+  img = loadImage('apple.png');
+  img2 = loadImage('orange.png');
+  img3 = loadImage('lemon.png');
+  img4 = loadImage('lime.png');
+  img5 = loadImage('blueberry.png');
+  img6 = loadImage('grape.png');
 }
 
 function setup() {
-createCanvas(600, 400);  // canvas size
-background(screenbg);   // use our background screen color
+createCanvas(600, 600);  // canvas size
+background(255,255,255);   // use our background screen color
 
 }
 
@@ -32,52 +37,44 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
   // just make sure each key option has the a stroke or fill and then what type of 
   // graphic function
 
- if (toolChoice == '1' ) {  // first tool
-   
+ if (toolChoice == '1' ) {  // small pen
+   strokeWeight(2);
     stroke(01);
     line(mouseX, mouseY, pmouseX, pmouseY);
     
-  } else if (toolChoice == '2') { // second tool
-
-    stroke(20);
+  } else if (toolChoice == '2') { // big pen
+    strokeWeight(7);
+    stroke(01);
     line(mouseX, mouseY, pmouseX, pmouseY);
-  } else if (toolChoice == '3') { // third tool
-
-    stroke(300, 100, 0, 80);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-  } else if (toolChoice == '4') {
-
-    stroke(0, 0, 255);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-  } else if (key == '5') { // this tool calls a function
-    stroke(0, 0, 255);
-    testbox(20, 20, 200);
-    testbox(200, 20, 20);
     
- // make testbox do something!
- //   line(mouseX, mouseY, pmouseX, pmouseY);
-  } else if (toolChoice == '6') {
-
-    stroke(200);
+  } else if (toolChoice == '3') { // small eraser
+    strokeWeight(2);
+    stroke(255,255,255);
     line(mouseX, mouseY, pmouseX, pmouseY);
-  } else if (toolChoice == '7') {
-
-    fill(100, 200, 100);
-    rect(mouseX, mouseY, 20, 20);
-  } else if (toolChoice == '8') {
-
-    fill(300, 100, 0, 80);
-    rect(mouseX, mouseY, 20, 20);
-  } else if (toolChoice == '9') {
-
-    fill(300, 100, 0, 80);
-    rect(mouseX, mouseY, 40, 40);
-  } else if (toolChoice == '0') {
-    stroke(0, 0);
-    fill(random(255), random(255), random(255), random(255));
-    rect(mouseX, mouseY, 200, 150);
-  } else if (toolChoice == 'g' || toolChoice == 'G') { // g places the image we pre-loaded
-    image(img, mouseX, mouseY);
+    
+  } else if (toolChoice == '4') { // big eraser
+    strokeWeight(7);
+    stroke(255, 255, 255);
+    line(mouseX, mouseY, pmouseX, pmouseY);
+  
+  }else if (toolChoice == 'a' || toolChoice == 'A') { // g places the image we pre-loaded
+    image(img, mouseX-15, mouseY-15);
+    
+  }else if (toolChoice == 's' || toolChoice == 'S') { // g places the image we pre-loaded
+    image(img2, mouseX-15, mouseY-15);
+    
+  }else if (toolChoice == 'd' || toolChoice == 'D') { // g places the image we pre-loaded
+    image(img3, mouseX-15, mouseY-15);
+    
+  }else if (toolChoice == 'f' || toolChoice == 'F') { // g places the image we pre-loaded
+    image(img4, mouseX-15, mouseY-15);
+    
+  }else if (toolChoice == 'g' || toolChoice == 'G') { // g places the image we pre-loaded
+    image(img5, mouseX-15, mouseY-15);
+    
+  }else if (toolChoice == 'h' || toolChoice == 'H') { // g places the image we pre-loaded
+    image(img6, mouseX-15, mouseY-151);
+    
     
   }
  }
@@ -95,7 +92,7 @@ function clear_print() {
 // this will do one of two things, x clears the screen by resetting the background
 // p calls the routine saveme, which saves a copy of the screen
   if (key == 'x' || key == 'X') {
-    background(screenbg); // set the screen back to the background color
+    background(255,255,255); // set the screen back to the background color
   } else if (key == 'p' || key == 'P') {
      saveme();  // call saveme which saves an image of the screen
   }

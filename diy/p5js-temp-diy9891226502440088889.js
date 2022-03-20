@@ -9,11 +9,11 @@ function preload() {
 //  img = loadImage('cat.jpg');  // cat.jpg needs to be next to this .js file
 // you can link to an image on your github account
   img = loadImage('apple.png');
-  img2 = loadImage('apple.png');
-  img3 = loadImage('apple.png');
-  img4 = loadImage('apple.png');
-  img5 = loadImage('apple.png');
-  img6 = loadImage('apple.png');
+  img2 = loadImage('orange.png');
+  img3 = loadImage('lemon.png');
+  img4 = loadImage('lime.png');
+  img5 = loadImage('blueberry.png');
+  img6 = loadImage('grape.png');
 }
 
 function setup() {
@@ -61,19 +61,19 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     image(img, mouseX-15, mouseY-15);
     
   }else if (toolChoice == 's' || toolChoice == 'S') { // g places the image we pre-loaded
-    image(img2, mouseX-60, mouseY-60);
+    image(img2, mouseX-15, mouseY-15);
     
   }else if (toolChoice == 'd' || toolChoice == 'D') { // g places the image we pre-loaded
-    image(img3, mouseX-60, mouseY-60);
+    image(img3, mouseX-15, mouseY-15);
     
   }else if (toolChoice == 'f' || toolChoice == 'F') { // g places the image we pre-loaded
-    image(img4, mouseX-60, mouseY-60);
+    image(img4, mouseX-15, mouseY-15);
     
   }else if (toolChoice == 'g' || toolChoice == 'G') { // g places the image we pre-loaded
-    image(img5, mouseX-60, mouseY-60);
+    image(img5, mouseX-15, mouseY-15);
     
   }else if (toolChoice == 'h' || toolChoice == 'H') { // g places the image we pre-loaded
-    image(img6, mouseX-60, mouseY-60);
+    image(img6, mouseX-15, mouseY-15);
     
     
   }
