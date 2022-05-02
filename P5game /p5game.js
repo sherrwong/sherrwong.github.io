@@ -49,7 +49,6 @@ if(gameState =="Win"){
   win();
 }
   text(("Score: " + score), width/2, 40);
-  text("Help me find little Jimmy", width/2, 60)
 } // end of draw
 
 function beginGame(){
@@ -106,6 +105,6 @@ function levelThree(){
 } // end level 3
 
 function win(){
-  text("You Yon", width/2, 40)
+  text("You Yon", width/2, 60)
   text("You found little Jimmy", width/2, height-20);
 } // end win
