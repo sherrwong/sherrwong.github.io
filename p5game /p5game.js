@@ -2,18 +2,18 @@ var ballx = 300; // width/2 ?
 var bally = 300;
 var ballSize = 40;
 var score =0;
-var img1, img2, beginImg;
+var img1, img2, img3, img4, img5, beginImg;
 var  c; // our text color as a variable, set in setup
 var gameState ="begin";
 
 function preload() {
 
-  img1 = loadImage('https://dma-git.github.io/images/cat-loaf.png');//LITTLE JIMMY
-  img2 = loadImage('https://dma-git.github.io/images/space.png'); //SCENE 1
-  img3 = loadImgae('');//SCENE 2
-  img4 = loadImgae('');//SCENE 3
-  img5 = loadImgae('');//DUCKY WITH JIMMY
-  beginImg = loadImage('https://dma-git.github.io/images/begin.png');//DUCKY
+  img1 = loadImage('sherrwong.github.io/jimmy.png');//LITTLE JIMMY
+  img2 = loadImage('sherrwong.github.io/grass.jpg'); //SCENE 1 grass
+  img3 = loadImgae('sherrwong.github.io/jimmy pond copy.jpg');//SCENE 2 pond
+  img4 = loadImgae('sherrwong.github.io/lake.jpg');//SCENE 3
+  img5 = loadImgae('sherrwong.github.io/ducky and jimmy.jpg');//DUCKY WITH JIMMY
+  beginImg = loadImage('sherrwong.github.io/ducky .jpg');//DUCKY
 }
 
 function setup() {
