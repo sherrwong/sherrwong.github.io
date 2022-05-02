@@ -21,7 +21,7 @@ function setup() {
   let c =color(200, 100, 100); //text color
   fill(c);
   textAlign(CENTER);
-  textSize(20); 
+  textSize(40); 
 } // end of setup
 
 
@@ -49,6 +49,7 @@ if(gameState =="Win"){
   win();
 }
   text(("Score: " + score), width/2, 40);
+  fill(255, 165, 0);
 } // end of draw
 
 function beginGame(){
@@ -105,6 +106,5 @@ function levelThree(){
 } // end level 3
 
 function win(){
-  text("You Yon", width/2, 60)
   text("You found little Jimmy", width/2, height-20);
 } // end win
