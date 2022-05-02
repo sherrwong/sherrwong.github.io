@@ -8,12 +8,12 @@ var gameState ="begin";
 
 function preload() {
 
-  img1 = loadImage('sherrwong.github.io/jimmy.png');//LITTLE JIMMY
-  img2 = loadImage('sherrwong.github.io/grass.jpg'); //SCENE 1 grass
-  img3 = loadImgae('sherrwong.github.io/jimmy pond copy.jpg');//SCENE 2 pond
-  img4 = loadImgae('sherrwong.github.io/lake.jpg');//SCENE 3
-  img5 = loadImgae('sherrwong.github.io/ducky and jimmy.jpg');//DUCKY WITH JIMMY
-  beginImg = loadImage('sherrwong.github.io/ducky .jpg');//DUCKY
+  img1 = loadImage('sherrwong.github.io/p5game /jimmy.png');//LITTLE JIMMY
+  img2 = loadImage('sherrwong.github.io/p5game /grass.jpg'); //SCENE 1 grass
+  img3 = loadImgae('sherrwong.github.io/p5game /jimmy pond copy.jpg');//SCENE 2 pond
+  img4 = loadImgae('sherrwong.github.io/p5game /lake.jpg');//SCENE 3
+  img5 = loadImgae('sherrwong.github.io/p5game /ducky and jimmy.jpg');//DUCKY WITH JIMMY
+  beginImg = loadImage('sherrwong.github.io/p5game /ducky .jpg');//DUCKY
 }
 
 function setup() {
